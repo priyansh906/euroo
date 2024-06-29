@@ -48,7 +48,7 @@
         if (Hls.isSupported()) {
           var hls = new Hls();
           hls.loadSource(
-            "https://jiidtc.dinkin1005.com/live/65b9dfd305ff6/caxi.m3u8"
+            "https://us.score806.cc/us_fs1/index.m3u8"
           );
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
@@ -56,7 +56,7 @@
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
           video.src =
-            "https://jiidtc.dinkin1005.com/live/65b9dfd305ff6/caxi.m3u8";
+            "https://us.score806.cc/us_fs1/index.m3u8";
           video.addEventListener("canplay", function () {
             video.play();
           });
