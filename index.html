@@ -47,13 +47,13 @@
         var video = document.getElementById("video");
         if (Hls.isSupported()) {
           var hls = new Hls();
-          hls.loadSource("https://goozp3.jkfkvurunjv0fk4.shop/playlist/23519/goozr.snncc7h46.shop/caxi.m3u8");
+          hls.loadSource("https://a73.azplay.me/hls/streama224169/index.m3u8?cst=a90ae3ae095c5393ee47fa46b232091e");
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
             video.play();
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-          video.src = "https://goozp3.jkfkvurunjv0fk4.shop/playlist/23519/goozr.snncc7h46.shop/caxi.m3u8";
+          video.src = "https://a73.azplay.me/hls/streama224169/index.m3u8?cst=a90ae3ae095c5393ee47fa46b232091e";
           video.addEventListener("canplay", function () {
             video.play();
           });
